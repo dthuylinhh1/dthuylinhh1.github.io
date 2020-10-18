@@ -1,0 +1,254 @@
+html{
+    box-sizing: border-box;
+  }
+  *,*:before, *:after{
+    box-sizing: inherit;
+  }
+  
+  body{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    background: #F2F2F2;
+    color: #323232;
+  
+  }
+  
+  
+  
+  img{
+    max-width: 100%;
+  
+  }
+  /* create two equal column float next to each other */
+  .column{
+    flex: 50%;
+    padding: 0 15px ;
+    /* border-right: 1px solid lightgray; */
+  }
+
+  /* Clear floats after the columns */
+  .row {
+    display: flex;
+  }
+
+  /* .column:last-child{
+      border-right: none;
+  } */
+
+  
+  #icon {
+    font-size: 20px;
+    overflow: visible; 
+    margin-right: 5px;
+  } 
+  
+  a{
+    color: #323232;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  /* format container so it looks like a real paper */
+  .container{
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  section{
+    padding: 7px 0 0 0 ;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 0px;
+  }
+  
+  section:last-child{
+    border-bottom: none;
+  }
+  
+  .section-title{
+    font-weight: bold;
+    font-size: 15px;
+    color: #236FB2;
+  }
+  
+  /* main Info */
+  
+  img.avatar{
+    width: 130px;
+  
+  }
+  
+  .my-name{
+    font-size: 43px;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  .my-title{
+    font-size: 20px;
+    font-weight: 300;
+    color: #236FB2;
+    text-align: center;
+  }
+  
+  .links{
+    display: flex;
+    margin: 10px 0 10px 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .link-item{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 30px;
+    font-size: 15px;
+  }
+
+  
+  .link-item svg{
+    margin-right: 6px;
+  }
+  
+  /* experience */
+  
+  .job{
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .job:last-child{
+    border-bottom: none;
+  }
+  
+  .job-title-container{
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .job-title{
+    font-size: 15px;
+  }
+  .job-company{
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .job-date{
+    font-size: 15px;
+  }
+  .job-location{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 15px;
+  }
+  
+  .job-description{
+    font-weight: lighter;
+    font-style: italic;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 3.5px;
+  }
+  
+  .description{
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 3.5px;
+  }
+
+  .job li{
+    margin-left: 15px;
+    padding-left: 1.5em;
+    list-style: none;
+    font-size: 14px;
+
+  }
+
+  .job li::before{
+    content: "\f08d"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.5em; 
+  }
+  
+  /* skills */
+  
+  .skills-container{
+    font-size: 14px;
+  }
+
+  .skills-container ul{
+    margin-left: 5px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .skills-container li{
+    padding-left: 1.5em;
+  }
+  
+  .skills-container li::before{
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.5em; 
+  }
+  
+  .p-skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    font-size: 14px;
+  }
+  
+  .p-skills-container ul{
+    margin-left: 15px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .p-skills-container li{
+    padding-left: 1.5em;
+  }
+  
+  .p-skills-container li::before{
+    content: "\f101"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.1em; 
+  }
+  
+  /* References */
+  /* .reference{
+    font-size:  18px;
+  
+  } */
+  
+  /* page responsiveness */
+  @media only screen and (max-width: 768px){
+    section {
+      grid-template-columns: 1fr;
+    }
+  
+    .links, .job-title-container {
+      flex-direction: column;
+    }
+  
+    .skills-container{
+      grid-template-columns: 1fr;
+    }
+  }
+  

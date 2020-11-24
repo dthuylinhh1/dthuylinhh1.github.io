@@ -13,7 +13,14 @@ html{
   
   }
   
-  
+  .container{
+    margin: 0 auto;
+    padding: 0.3in;
+    width: 8.5in;
+    height: 12in;
+    background-color: rgb(250,255,255);
+    box-shadow: 0 3px 8px -3px rgba(0,0,0,0.7);
+  }
   
   img{
     max-width: 100%;
@@ -175,7 +182,7 @@ html{
   }
 
   .job li::before{
-    content: "\f08d"; /* FontAwesome Unicode */
+    content: "\f101"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
     margin-left: -1.3em; /* same as padding-left set on li */
@@ -249,6 +256,23 @@ html{
   
     .skills-container{
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media print{
+    @page{
+      size: 8.5in 12in;
+    }
+
+    .container{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      padding: 0;
+      line-height: 18px;
     }
   }
   

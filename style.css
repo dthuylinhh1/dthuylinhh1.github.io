@@ -16,8 +16,6 @@ html{
   .container{
     margin: 0 auto;
     padding: 0.3in;
-    width: 8.5in;
-    height: 12in;
     background-color: rgb(250,255,255);
     box-shadow: 0 3px 8px -3px rgba(0,0,0,0.7);
   }
@@ -259,20 +257,6 @@ html{
     }
   }
 
-  @media print{
-    @page{
-      size: 8.5in 12in;
-    }
+  
 
-    .container{
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      margin: 0 auto;
-      padding: 0;
-      line-height: 18px;
-    }
-  }
   

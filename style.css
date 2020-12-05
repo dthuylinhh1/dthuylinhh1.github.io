@@ -14,9 +14,10 @@ html{
   }
   
   .container{
-    margin: 0 auto;
+    max-width: 960px;
+    margin: 40px auto;
     padding: 0.3in;
-    background-color: rgb(250,255,255);
+    background-color: white;
     box-shadow: 0 3px 8px -3px rgba(0,0,0,0.7);
   }
   
@@ -57,13 +58,13 @@ html{
   }
   
   /* format container so it looks like a real paper */
-  .container{
+  /* .container{
     max-width: 960px;
     margin: 40px auto;
     padding: 32px;
     background: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
+  } */
   
   section{
     padding: 7px 0 0 0 ;

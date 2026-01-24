@@ -1,172 +1,177 @@
-html{
-    box-sizing: border-box;
-  }
-  *,*:before, *:after{
-    box-sizing: inherit;
-  }
-  
-  body{
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.5;
-    background: #F2F2F2;
-    color: #323232;
-  
-  }
-  
+/* ===== Base ===== */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.35;              /* tighter */
+  background: #F2F2F2;
+  color: #222;
+}
+
+/* ===== Page Container ===== */
+.container{
+  max-width: 860px;               /* slightly narrower */
+  margin: 24px auto;              /* less tall */
+  padding: 0.22in;                /* less tall */
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);  /* softer */
+}
+
+/* ===== Header ===== */
+.my-name{
+  font-size: 36px;                /* smaller */
+  line-height: 1.05;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.my-title{
+  font-size: 16px;
+  font-weight: 400;
+  color: #236FB2;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Links row */
+.links{
+  display: flex;
+  justify-content: center;        /* center + clean */
+  align-items: center;
+  flex-wrap: wrap;                /* wraps on smaller screens */
+  gap: 10px 22px;                 /* replaces fixed margins */
+  margin: 6px 0 8px;
+}
+
+.link-item{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 0;                      /* remove fixed left/right spacing */
+}
+
+#icon{
+  font-size: 16px;                /* smaller icon */
+  margin-right: 6px;
+  overflow: visible;
+}
+
+a{
+  color: #222;
+  text-decoration: none;
+}
+a:hover{ text-decoration: underline; }
+
+/* Summary */
+.description{
+  font-size: 14px;                /* tighter */
+  text-align: left;               /* less “blocky” than justify */
+  margin: 0 0 6px 0;
+}
+
+/* ===== Sections ===== */
+section{
+  padding: 6px 0;                 /* tighter */
+  border-bottom: 1px solid #E9E9E9;
+}
+section:last-child{ border-bottom: none; }
+
+.section-title{
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #111;
+  text-transform: none;
+}
+
+/* ===== Jobs / Education blocks ===== */
+.job{
+  padding: 6px 0;                 /* tighter */
+  margin: 0;                      /* remove extra spacing */
+  border-bottom: none;            /* cleaner */
+}
+
+.job-title-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin: 2px 0 4px;
+}
+
+.job-company{
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+}
+
+.job-title, .job-date{
+  font-size: 14px;
+  margin: 0;
+}
+
+.job-location{
+  font-size: 13px;
+  font-style: italic;
+  color: #666;
+  margin: 0;
+}
+
+/* Bullets */
+.job ul{
+  margin: 4px 0 0 0;
+  padding-left: 18px;             /* normal bullets spacing */
+}
+
+.job li{
+  font-size: 13px;
+  margin: 2px 0;
+  padding-left: 0;
+  list-style: disc;               /* simpler & cleaner than icon bullets */
+}
+
+/* If you really want the arrow icon bullets, uncomment this and comment list-style:disc above
+.job li{
+  list-style: none;
+  position: relative;
+  padding-left: 14px;
+}
+.job li::before{
+  content: "›";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #666;
+}
+*/
+
+/* ===== Skills / Projects Tables ===== */
+table.GeneratedTable{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table.GeneratedTable td, table.GeneratedTable th{
+  border: none;                   /* remove heavy borders */
+  padding: 2px 6px;               /* add clean spacing */
+  vertical-align: top;
+}
+
+table.GeneratedTable td:first-child{
+  width: 170px;                   /* aligns labels neatly */
+  white-space: nowrap;
+}
+
+/* ===== Print Friendly (optional but recommended) ===== */
+@media print{
+  body{ background: #fff; }
   .container{
-    max-width: 960px;
-    margin: 40px auto;
-    padding: 0.3in;
-    background-color: white;
-    box-shadow: 0 3px 8px -3px rgba(0,0,0,0.7);
+    box-shadow: none;
+    margin: 0;
+    max-width: 100%;
+    padding: 0.18in;
   }
-
-  .my-name{
-    font-size: 43px;
-    line-height: 1;
-    text-align: center;
-  }
-  
-  .my-title{
-    font-size: 20px;
-    font-weight: 300;
-    color: #236FB2;
-    text-align: center;
-  }
-
-  .skills li{
-    margin-left: 0px;
-    /* padding-left: 1.5em; */
-    list-style: none;
-    font-size: 14px;
-    
-  }
-  #icon {
-    font-size: 20px;
-    overflow: visible; 
-    margin-right: 5px;
-  } 
-  
-  a{
-    color: #323232;
-    text-decoration: none;
-  }
-  
-  a:hover{
-    text-decoration: underline;
-  }
-
-  .links{
-    display: flex;
-    margin: 10px 0 10px 0;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .link-item{
-    display: flex;
-    align-items: center;
-    margin-right: 100px;
-    margin-left: 30px;
-    font-size: 15px;
-  }
-
-  
-  .link-item svg{
-    margin-right: 6px;
-  }
-
-  section{
-    padding: 7px 0 0 0 ;
-    border-bottom: 1px solid lightgrey;
-    margin-bottom: 0px;
-    
-  }
-  
-  section:last-child{
-    border-bottom: none;
-  }
-  
-  .section-title{
-    font-weight: bold;
-    font-size: 15px;
-    color: #000000;
-  }
-
-  .job{
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  .job:last-child{
-    border-bottom: none;
-  }
-  
-  .job-title-container{
-    margin-top: 1px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-  }
-  
-  .job-title{
-    font-size: 15px;
-  }
-  .job-company{
-    font-weight: bold;
-    font-size: 15px;
-  }
-  
-  .job-date{
-    font-size: 15px;
-  }
-  .job-location{
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 15px;
-  }
-  
-  .job-description{
-    font-weight: lighter;
-    font-style: italic;
-    text-align: justify;
-    font-size: 15px;
-    margin-bottom: 3.5px;
-  }
-  
-  .description{
-    text-align: justify;
-    font-size: 15px;
-    margin-bottom: 3.5px;
-  }
-
-  .job li{
-    margin-left: 15px;
-    padding-left: 1.5em;
-    list-style: none;
-    font-size: 14px;
-
-  }
-
-  .job li::before{
-    content: "\f101"; /* FontAwesome Unicode */
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: -1.3em; /* same as padding-left set on li */
-    width: 1.5em; 
-  }
-
-  table.GeneratedTable td, table.GeneratedTable th{
-      
-      border-width: 1px;
-  }
-
-  
-  table.GeneratedTable{
-      width:100%;
-      border-width: 1px;
-      font-size: 15px;
-  }
-
-  
+  a{ text-decoration: none; }
+}

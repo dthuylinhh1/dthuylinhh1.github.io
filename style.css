@@ -164,6 +164,16 @@ table.GeneratedTable td:first-child{
   white-space: nowrap;
 }
 
+.project-points{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.project-points li{
+  font-size: 13px;
+  margin: 2px 0;
+}
+
 /* ===== Print Friendly (optional but recommended) ===== */
 @media print{
   body{ background: #fff; }

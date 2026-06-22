@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Job Application Assistant</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="assistant-body">
+    <main class="assistant-shell">
+      <header class="assistant-header">
+        <a class="back-link" href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Resume</a>
+        <div>
+          <h1>AI Job Application Assistant</h1>
+          <p>Paste a resume and job post to get matched strengths, gaps, and tailored resume changes.</p>
+        </div>
+      </header>
+
+      <section class="assistant-grid" aria-label="Application analysis form">
+        <div class="assistant-panel input-panel">
+          <div class="panel-heading">
+            <h2>Inputs</h2>
+            <span class="status-pill">Local MVP</span>
+          </div>
+
+          <label for="resumeText">Resume</label>
+          <textarea id="resumeText" rows="13" spellcheck="true"></textarea>
+
+          <label for="jobText">Job Posting</label>
+          <textarea id="jobText" rows="13" spellcheck="true"></textarea>
+
+          <div class="assistant-actions">
+            <button id="analyzeBtn" type="button" class="primary-action">
+              <i class="fa fa-magic" aria-hidden="true"></i>
+              Analyze
+            </button>
+            <button id="loadSampleBtn" type="button" class="secondary-action">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+              Sample
+            </button>
+            <button id="clearBtn" type="button" class="icon-action" aria-label="Clear inputs" title="Clear inputs">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="results-stack">
+          <section class="assistant-panel score-panel" aria-live="polite">
+            <div class="score-ring" id="scoreRing">
+              <span id="scoreValue">0%</span>
+            </div>
+            <div>
+              <h2>Match</h2>
+              <p id="scoreSummary">Run an analysis to see how the resume maps to the role.</p>
+            </div>
+          </section>
+
+          <section class="assistant-panel">
+            <div class="panel-heading">
+              <h2>Requirement Map</h2>
+              <button id="copyReportBtn" type="button" class="icon-action" aria-label="Copy approved report" title="Copy approved report">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="match-columns">
+              <div>
+                <h3>Hits</h3>
+                <ul id="hitsList" class="result-list empty-list">
+                  <li>Matched requirements will appear here.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Gaps</h3>
+                <ul id="gapsList" class="result-list empty-list">
+                  <li>Missing or weak requirements will appear here.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="assistant-panel">
+            <div class="panel-heading">
+              <h2>Tailored Suggestions</h2>
+              <span id="approvalCount" class="status-pill">0 approved</span>
+            </div>
+            <div id="suggestionsList" class="suggestions-list empty-state">
+              Suggestions will appear after analysis.
+            </div>
+          </section>
+
+          <section class="assistant-panel">
+            <div class="panel-heading">
+              <h2>Use This In Your Resume</h2>
+              <button id="copyDraftBtn" type="button" class="icon-action" aria-label="Copy draft changes" title="Copy draft changes">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div id="draftOutput" class="draft-output empty-state">
+              Approve a suggestion, then generate resume text.
+            </div>
+            <div class="assistant-actions">
+              <button id="generateDraftBtn" type="button" class="primary-action">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                Generate Draft
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="assistant.js"></script>
+  </body>
+</html>

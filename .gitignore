@@ -1,0 +1,14 @@
+.DS_Store
+
+# Node / frontend
+node_modules/
+dist/
+npm-debug.log*
+
+# Java / Spring Boot
+target/
+
+# Local environment
+.env
+.env.*
+!.env.example

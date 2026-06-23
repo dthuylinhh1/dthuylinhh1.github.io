@@ -1,0 +1,95 @@
+How my OCD Communication Executive experience connects to Agility PR Solutions
+
+Agility's customers are not just people who need software. They are people doing communication work under pressure. My OCD experience helps because I have been close to that kind of work.
+
+At OCD Management Consulting, as a Communication Executive supporting marketing and related activities, my work connects to areas such as:
+
+- presenting consulting services clearly
+- writing or coordinating marketing content
+- turning complex consulting ideas into understandable messaging
+- supporting website, news, social, or marketing content
+- communicating project value to clients or prospects
+- helping the firm show credibility through case studies, service pages, or events
+- coordinating with consultants, managers, or business teams to get accurate information
+
+1. Turning complex information into clear messaging
+
+At a consulting firm, services like digital transformation, restructuring, KPI systems, training, or market research can be complex. Marketing and communications work has to explain them clearly.
+
+Agility's users do similar work. PR and communications teams take complex company news, market changes, crisis events, or campaign results and turn them into clear messages for journalists, executives, clients, or the public.
+
+Useful sentence:
+
+My communications work taught me how important it is to transform complex business information into clear, audience-appropriate messaging.
+
+2. Understanding why media monitoring matters
+
+A consulting firm cares about reputation, visibility, client trust, and market positioning. Communications teams need to understand what topics are trending, what competitors are saying, and how their own brand appears.
+
+Agility builds tools for exactly that:
+
+- media monitoring
+- brand and reputation insights
+- social listening
+- executive briefings
+- crisis management
+
+Useful sentence:
+
+I understand why communication teams need timely visibility into market conversations, brand reputation, and public-facing narratives.
+
+3. Knowing the pain of manual communication work
+
+Marketing and communications work often involves repetitive manual tasks:
+
+- drafting posts and emails
+- preparing campaign content
+- collecting updates
+- formatting reports
+- checking news or competitor activity
+- summarizing information for managers
+- coordinating approvals
+
+Agility's AI tools aim to reduce that manual burden through PR CoPilot, automated insights, report generation, journalist matching, and media intelligence.
+
+Useful sentence:
+
+My previous communications role helps me appreciate how AI can reduce repetitive drafting, monitoring, and reporting tasks while leaving professionals focused on strategy and judgment.
+
+4. Understanding non-technical users
+
+Agility's users are often PR professionals, communication managers, agency teams, and marketing teams. They may not care how the model works internally. They care whether the output is clear, accurate, timely, and usable.
+
+My communication background helps me think like the user:
+
+- Is the wording clear?
+- Is the output useful?
+- Can this be copied into a report?
+- Is it trustworthy?
+- Does it help someone make a decision?
+
+That is valuable for an AI Software Engineer because AI products need strong user experience and careful output design.
+
+5. Bridging business and engineering
+
+This is the strongest angle.
+
+I am not only saying, "I can code Java, Spring, and OpenAI APIs." I am saying:
+
+I understand the communications workflow Agility is building for, and I can help translate that workflow into AI-backed software features.
+
+That makes my background more relevant than generic backend experience alone.
+
+Cover letter paragraph
+
+My previous role as a Communication Executive at OCD Management Consulting also gives me useful domain context for Agility's customers. In that role, I supported marketing and communications activities for a consulting firm, where the work often involved turning complex business services and project information into clear, audience-appropriate messaging. That experience helps me understand the pain points of communications teams: tracking information, communicating value clearly, preparing content, and supporting decision-making under time pressure. I see a strong connection between that experience and Agility's mission to help PR and communications professionals monitor media, extract insights, automate outreach, and report impact through AI-powered tools.
+
+Interview answer
+
+My OCD experience helps me understand Agility's users. I have worked on the communications and marketing side, where the challenge is not just having information, but turning it into clear messaging and useful decisions. That gives me a practical lens when building AI features: the output needs to be accurate, understandable, and immediately useful for a communications professional.
+
+Key idea
+
+OCD gave me user and domain understanding.
+Software gives me implementation ability.
+Agility needs both.

@@ -176,13 +176,32 @@ table.GeneratedTable td:first-child{
 
 /* ===== Print Friendly (optional but recommended) ===== */
 @media print{
-  body{ background: #fff; }
+  @page{ margin: 0.25in; }
+  body{ background: #fff; line-height: 1.35; }
   .container{
     box-shadow: none;
     margin: 0;
     max-width: 100%;
-    padding: 0.18in;
+    padding: 0;
   }
+  .my-name{ font-size: 34px; }
+  .my-title{ font-size: 15px; margin-bottom: 6px; }
+  .links{ gap: 5px 18px; margin: 5px 0 6px; }
+  .link-item{ font-size: 13.5px; }
+  #icon{ font-size: 14.5px; }
+  .description{ font-size: 13.4px; margin-bottom: 4px; }
+  section{ padding: 4.5px 0; }
+  .section-title{ font-size: 13.5px; margin-bottom: 3px; }
+  .job{ padding: 4.5px 0; }
+  .job-title-container{ margin: 2px 0 3px; }
+  .job-company, .job-title, .job-date{ font-size: 13.2px; }
+  .job-location{ font-size: 12.5px; }
+  .job ul, .project-points{ margin-top: 3px; padding-left: 16px; }
+  .job li, .project-points li{ font-size: 12.8px; margin: 0.5px 0; }
+  table.GeneratedTable{ font-size: 13.2px; }
+  table.GeneratedTable td, table.GeneratedTable th{ padding: 1.5px 5px; }
+  table.GeneratedTable td:first-child{ width: 145px; }
+  .resume-tool-link{ display: none; }
   a{ text-decoration: none; }
 }
 
